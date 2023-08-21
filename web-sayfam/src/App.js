@@ -9,14 +9,16 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { useState } from "react";
 import Profile from "./components/Profile";
-// import Gk_hero from "./components/Gk_hero";
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap%27);
+</style>;
 
 function App() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <div>
-      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] ">
+      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] font ">
         <Header toggle={toggle} setToggle={setToggle} />
         <Hero />
         <Skills />

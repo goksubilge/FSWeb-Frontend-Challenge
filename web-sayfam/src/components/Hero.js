@@ -5,9 +5,11 @@ const Hero = () => {
   return (
     <div>
       <div>Bilge GÖKSU</div>
-      <div className=" flex justify-between">
+      <div className=" flex justify-between gap-4">
         <section>
-          <h2>Creative thinker Minimalism lover</h2>
+          <h1 className="leading-[72px] font-bold text-7xl ">
+            Creative thinker Minimalism lover
+          </h1>
           <p>
             Hi, I’m Bilge. I’m a full-stack developer. If you are looking for a
             Developer who to craft solid and scalable frontend products with
