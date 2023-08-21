@@ -1,4 +1,4 @@
-import "./reset.css";
+// import "./reset.css";
 import "./App.css";
 import "./index.css";
 
@@ -8,21 +8,22 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { useState } from "react";
+import Profile from "./components/Profile";
+// import Gk_hero from "./components/Gk_hero";
 
 function App() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className={toggle ? "App.dark" : "App"}>
-      <div className="">
+    <div>
+      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] ">
         <Header toggle={toggle} setToggle={setToggle} />
-        <hr />
         <Hero />
-        <hr />
-        <Projects />
-        <hr />
         <Skills />
         <hr />
+        <Profile />
+        <hr />
+        <Projects />
         <Footer />
       </div>
     </div>
