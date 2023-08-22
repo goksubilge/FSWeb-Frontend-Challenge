@@ -3,17 +3,39 @@ import DataProjects from "../extras/DataProjects";
 
 const Projects = () => {
   return (
-    <div id="project">
+    <div id="project" className="mt-4 mb-4">
       <div>
-        <h4 className="leading-[72px] font-bold text-3xl ">Projects</h4>
+        <h4 className="text-[#1F2937] text-5xl leading-none font-semibold mb-4 ">
+          Projects
+        </h4>
       </div>
       <div className="flex flex-row justify-between gap-10">
         {DataProjects().map((item, index) => (
           <div key={index} className="max-w-[300px]">
-            {/* {console.log(item.picture)} */}
             <img src={item.picture} alt="projects"></img>
-            <h2>{item.title}</h2>
-            <h3>{item.descr}</h3>
+            <h2 className="text-[#7B61FF] text-3xl font-medium self-stretch mt-2 mb-2">
+              {item.title}
+            </h2>
+            <h3 className="text-sm pb-4">{item.descr}</h3>
+            <article className="py-4">
+              <span className="flex-row justify-between border-2 rounded-md px-4 py-1 gap-2 border-[#7B61FF] text-[#7B61FF] mr-2">
+                {item.emptyInfo1}
+              </span>
+              <span className="flex-row justify-between border-2 rounded-md px-4 py-1 gap-2 border-[#7B61FF] text-[#7B61FF] mr-2 ">
+                {item.emptyInfo2}
+              </span>
+              <span className="flex-row justify-between border-2 rounded-md px-4 py-1 gap-2 border-[#7B61FF] text-[#7B61FF] ">
+                {item.emptyInfo3}
+              </span>
+            </article>
+            <div className="flex justify-between">
+              <a href={item.link1} className="text-[#7B61FF] underline">
+                Github
+              </a>
+              <a href={item.link2} className="text-[#7B61FF] underline">
+                View Site
+              </a>
+            </div>
           </div>
         ))}
       </div>

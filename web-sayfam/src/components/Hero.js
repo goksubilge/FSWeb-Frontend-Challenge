@@ -4,10 +4,16 @@ import bilge from "../extras/assets/images/bilge.jpg";
 const Hero = () => {
   return (
     <div>
-      <div>Bilge GÖKSU</div>
-      <div className=" flex justify-between gap-4">
+      <p
+        className="flex 
+      items-center justify-center text-xl font-medium text-[#7B61FF] leading-7
+      before:bg-[#7B61FF] before:flex-1 before:h-[1px] after:h-[1px] after:flex-[6] "
+      >
+        <span className=" bg-none my-0 mx-4 ">Bilge GÖKSU</span>
+      </p>
+      <div className=" flex justify-between items-center gap-4 ">
         <section>
-          <h1 className="leading-[72px] font-bold text-7xl ">
+          <h1 className="text-[#1F2937] leading-none font-bold text-7xl">
             Creative thinker Minimalism lover
           </h1>
           <p>

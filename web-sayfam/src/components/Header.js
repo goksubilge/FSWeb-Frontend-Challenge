@@ -4,18 +4,16 @@ const Header = (props) => {
   return (
     <>
       <div className="flex justify-end ">
-        <button class="text-[#777777] font-bold pr-4 dark:text-[#BAB3E7]">
-          DARK MODE
-        </button>
+        <button class="font-bold pr-4 dark:text-[#BAB3E7]">DARK MODE</button>
 
         <span>|</span>
         <button class=" pl-4 text-[#7B61FF] font-bold dark:text-[#BAB3E7]">
           TÜRKÇE
         </button>
-        <p className="text-[#777777] dark:text-[#FFFFFF] font-bold">'YE GEÇ</p>
+        <p className=" dark:text-[#FFFFFF] font-bold">'YE GEÇ</p>
       </div>
 
-      <div className="flex justify-between text-center text-[#6C7280]">
+      <div className="flex justify-between text-center ">
         <div className="flex-1">
           <h2 className="text-[#7B61FF] text-2xl leading-8 font-semibold rounded-full bg-[#EFEBFF] w-12 h-12 text-center rotate-45 flex justify-center items-center dark:bg-[#4731D3] dark:text-[#8F88FF] ">
             B

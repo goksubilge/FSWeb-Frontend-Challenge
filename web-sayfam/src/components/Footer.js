@@ -2,16 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-[#F9F9F9]">
       <h4 className="w-[45%] text-[#1F2937] text-5xl leading-none font-semibold dark:text-[#AEBCCF] pt-28 pb-20">
         Let’s work together on your next product.
       </h4>
       <nav className="flex justify-between pb-28">
+        <span className="leading-6 pr-1">👉 </span>
         <a
           className="text-[#AF0C48] flex-1 text-xl leading-6 font-normal underline dark:text-[#BAB2E7]"
           href="mailto:goksu.blge@hotmail.com"
         >
-          👉 goksu.blge@hotmail.com
+          goksu.blge@hotmail.com
         </a>
 
         <a
@@ -32,7 +33,7 @@ const Footer = () => {
           className="ml-5 text-[#0077B5] dark:text-[#0BA6F6]"
           href="https://www.linkedin.com"
         >
-          LinkedIn
+          Linkedin
         </a>
       </nav>
     </div>

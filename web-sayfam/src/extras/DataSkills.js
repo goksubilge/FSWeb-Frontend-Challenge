@@ -3,19 +3,19 @@ const DataSkills = () => {
     {
       id: 0,
       title: "Java Script",
-      description:
+      descr:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!",
     },
     {
       id: 1,
       title: "React.JS",
-      description:
+      descr:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!",
     },
     {
       id: 2,
       title: "Node.JS",
-      description:
+      descr:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!",
     },
   ];

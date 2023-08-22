@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] font ">
+      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] font-normal text-[#6B7280]">
         <Header toggle={toggle} setToggle={setToggle} />
         <Hero />
         <Skills />

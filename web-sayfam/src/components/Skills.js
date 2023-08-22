@@ -1,29 +1,21 @@
 import React from "react";
+import DataSkills from "../extras/DataSkills";
 
 const Skills = () => {
   return (
-    <div id="skills">
-      <h4 className="leading-[72px] font-bold text-3xl ">Skills</h4>
-      <div>
-        <h4>Java Script</h4>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div>
-        <h4>React.Js</h4>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div>
-        <h4>Node.Js</h4>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
+    <div id="skills" className="mt-10 mb-4">
+      <h4 className="text-[#1F2937] text-5xl leading-none font-semibold mb-4">
+        Skills
+      </h4>
+      <div className="flex flex-row justify-between gap-10">
+        {DataSkills().map((item, index) => (
+          <div key={index} className="max-w-[300px]">
+            <h2 className="text-[#7B61FF] text-3xl font-medium ">
+              {item.title}
+            </h2>
+            <h3 className="text-xs">{item.descr}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
