@@ -5,15 +5,18 @@ const Projects = () => {
   return (
     <div id="project">
       <div>
-        <h2>Projects</h2>
+        <h4 className="leading-[72px] font-bold text-3xl ">Projects</h4>
       </div>
-      {DataProjects().map((item, index) => (
-        <div key={index}>
-          <div src={item.picture}></div>
-          <h2>{item.title}</h2>
-          <h3>{item.descr}</h3>
-        </div>
-      ))}
+      <div className="flex flex-row justify-between gap-10">
+        {DataProjects().map((item, index) => (
+          <div key={index} className="max-w-[300px]">
+            {/* {console.log(item.picture)} */}
+            <img src={item.picture} alt="projects"></img>
+            <h2>{item.title}</h2>
+            <h3>{item.descr}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

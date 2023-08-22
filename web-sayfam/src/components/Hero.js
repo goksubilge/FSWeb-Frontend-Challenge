@@ -55,7 +55,7 @@ const Hero = () => {
         </section>
 
         <img
-          className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 rounded-2xl max-w-md dark:border-[#AEBCCF]"
+          className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 lg:md-auto md:m-auto rounded-2xl max-w-md dark:border-[#AEBCCF]"
           src={bilge}
           alt="kız fotosu"
         ></img>
@@ -65,3 +65,4 @@ const Hero = () => {
 };
 
 export default Hero;
+//1125px sınır responsive node

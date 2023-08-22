@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <div className="flex justify-between flex-wrap">
       <div>
-        <h1>Profile</h1>
+        <h4 className="leading-[72px] font-bold text-3xl ">Profile</h4>
       </div>
 
       <div>

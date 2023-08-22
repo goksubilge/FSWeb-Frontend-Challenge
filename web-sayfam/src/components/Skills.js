@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <div id="skills">
-      Skills
+      <h4 className="leading-[72px] font-bold text-3xl ">Skills</h4>
       <div>
         <h4>Java Script</h4>
         <p>
