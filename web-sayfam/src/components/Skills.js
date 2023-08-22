@@ -13,7 +13,7 @@ const Skills = () => {
             <h2 className="text-[#7B61FF] text-3xl font-medium ">
               {item.title}
             </h2>
-            <h3 className="text-xs">{item.descr}</h3>
+            <h3 className="text-xs/[18px]">{item.descr}</h3>
           </div>
         ))}
       </div>

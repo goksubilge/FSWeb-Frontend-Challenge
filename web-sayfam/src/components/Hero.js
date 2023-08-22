@@ -24,7 +24,7 @@ const Hero = () => {
           <article className="flex content-center items-center">
             <button
               href="https://github.com/goksubilge"
-              className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] mr-2 mb-2 px-9"
+              className=" duration-500 text-[#FFFFFF] text-lg font-medium w-36 h-12 border-2 border-[#7B61FF] bg-[#7B61FF] hover:text-[#7B61FF] hover:bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] mr-2 mb-2 px-9"
             >
               Hire me
             </button>
