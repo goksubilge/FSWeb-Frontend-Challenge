@@ -10,9 +10,7 @@ const DataProjects = () => {
       title: "Project 1",
       descr:
         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-      emptyInfo1: "react",
-      emptyInfo2: "redux",
-      emptyInfo3: "axios",
+      emptyInfo: ["react", "redux", "axios"],
       link1: "https://github.com/goksubilge/insta-demo",
       link2: "https://github.com/goksubilge/insta-demo",
     },
@@ -22,9 +20,7 @@ const DataProjects = () => {
       title: "Project 2",
       descr:
         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-      emptyInfo1: "react",
-      emptyInfo2: "redux",
-      emptyInfo3: "axios",
+      emptyInfo: ["react", "redux", "axios"],
       link1: "https://github.com/goksubilge/insta-demo",
       link2: "https://github.com/goksubilge/insta-demo",
     },
@@ -34,9 +30,7 @@ const DataProjects = () => {
       title: "Project 3",
       descr:
         "I will explain here what I want to talk about the project. This project was a very successful choice to express my functions in my run. Below are some of the special methods I use.",
-      emptyInfo1: "react",
-      emptyInfo2: "redux",
-      emptyInfo3: "axios",
+      emptyInfo: ["react", "redux"],
       link1: "https://github.com/goksubilge/insta-demo",
       link2: "https://github.com/goksubilge/insta-demo",
     },
