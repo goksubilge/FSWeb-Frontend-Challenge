@@ -3,7 +3,7 @@ const Header = (props) => {
   const { toggle, setToggle } = props;
   return (
     <>
-      <div className="flex justify-end ">
+      <div className="flex justify-end py-4 ">
         <button class="font-bold pr-4 dark:text-[#BAB3E7]">DARK MODE</button>
 
         <span>|</span>
@@ -14,8 +14,8 @@ const Header = (props) => {
       </div>
 
       <div className="flex justify-between text-center ">
-        <div className="flex-1">
-          <h2 className="text-[#7B61FF] text-2xl leading-8 font-semibold rounded-full bg-[#EFEBFF] w-12 h-12 text-center rotate-45 flex justify-center items-center dark:bg-[#4731D3] dark:text-[#8F88FF] ">
+        <div className=" flex items-center">
+          <h2 className="text-[#7B61FF] text-2xl leading-8 font-semibold rounded-full bg-[#EFEBFF] w-16 h-16 text-center rotate-[40deg] flex justify-center items-center dark:bg-[#4731D3] dark:text-[#8F88FF] ">
             B
           </h2>
         </div>

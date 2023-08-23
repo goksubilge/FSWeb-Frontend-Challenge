@@ -60,11 +60,13 @@ const Hero = () => {
           </article>
         </section>
 
-        <img
-          className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 lg:md-auto md:m-auto rounded-2xl max-w-md dark:border-[#AEBCCF]"
-          src={bilge}
-          alt="kız fotosu"
-        ></img>
+        <div className="w-[70%] drop-shadow-2xl ml-auto mr-0 mb-auto mt-10 lg:mr-0 md:mr-auto sm:mr-auto max-[640px]:mr-auto">
+          <img
+            className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 lg:md-auto md:m-auto rounded-2xl max-w-md dark:border-[#AEBCCF]  lg:m-auto"
+            src={bilge}
+            alt="kız fotosu"
+          ></img>
+        </div>
       </div>
     </div>
   );
@@ -72,3 +74,11 @@ const Hero = () => {
 
 export default Hero;
 //1125px sınır responsive node
+
+/* <div className="w-[70%] drop-shadow-2xl ml-auto mr-0 mb-auto mt-10 lg:mr-0 md:mr-auto sm:mr-auto max-[640px]:mr-auto">
+          <img
+            className="  mb-4 rounded-3xl lg:m-auto md:m-auto"
+            src="../myPic.png"
+            alt="Me"
+          ></img>
+        </div> */
