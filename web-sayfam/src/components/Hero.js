@@ -7,28 +7,30 @@ const Hero = () => {
       <p
         className="flex 
       items-center justify-center text-xl font-medium text-[#7B61FF] leading-7
-      before:bg-[#7B61FF] before:flex-1 before:h-[1px] after:h-[1px] after:flex-[6] "
+      before:bg-[#7B61FF] before:flex-1 before:h-[1px] after:h-[1px] after:flex-[6]  "
       >
-        <span className=" bg-none my-0 mx-4 ">Bilge GÖKSU</span>
+        <span className=" bg-none my-0 mx-4 max-sm:flex max-sm:justify-center">
+          Bilge GÖKSU
+        </span>
       </p>
-      <div className=" flex justify-between items-center gap-4 ">
-        <section>
-          <h1 className="text-[#1F2937] leading-none font-bold text-7xl">
+      <div className=" flex justify-between items-center gap-4 max-[1024px]:flex-col-reverse ">
+        <article className="mt-10 my-3">
+          <h1 className="text-[#1F2937] leading-none font-bold text-7xl max-sm:text-5xl py-2">
             Creative thinker Minimalism lover
           </h1>
-          <p>
+          <p className="max-w-lg py-4 pr-2 ">
             Hi, I’m Bilge. I’m a full-stack developer. If you are looking for a
             Developer who to craft solid and scalable frontend products with
             great user experiences. Let’s shake hands with me.
           </p>
-          <article className="flex content-center items-center">
+          <div className="flex py-2 max-sm:flex-col max-sm:items-center gap-4">
             <button
               href="https://github.com/goksubilge"
-              className=" duration-500 text-[#FFFFFF] text-lg font-medium w-36 h-12 border-2 border-[#7B61FF] bg-[#7B61FF] hover:text-[#7B61FF] hover:bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] mr-2 mb-2 px-9"
+              className=" duration-500 text-[#FFFFFF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] bg-[#7B61FF] hover:text-[#7B61FF] hover:bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-9"
             >
               Hire me
             </button>
-            <button className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md flex items-center justify-evenly dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] mr-2 mb-2 px-8 ">
+            <button className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md flex items-center justify-center dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-8 ">
               <svg
                 className="w-4 h-4 mr-2 -ml-1"
                 aria-hidden="true"
@@ -46,7 +48,7 @@ const Hero = () => {
               </svg>
               <h4>GitHub</h4>
             </button>
-            <button className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 h-12 border-2 flex items-center justify-evenly border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] mr-2 mb-2 px-4 ">
+            <button className=" duration-500 text-[#7B61FF] text-lg font-medium w-36  max-sm:w-full h-12 border-2 flex items-center justify-center border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-4 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 mr-2 -ml-1"
@@ -57,12 +59,12 @@ const Hero = () => {
               </svg>
               <h4> Linkedin</h4>
             </button>
-          </article>
-        </section>
+          </div>
+        </article>
 
-        <div className="w-[70%] drop-shadow-2xl ml-auto mr-0 mb-auto mt-10 lg:mr-0 md:mr-auto sm:mr-auto max-[640px]:mr-auto">
+        <div className="w-[70%] drop-shadow-2xl ml-auto mr-0 mb-auto mt-10  md:mr-auto sm:mr-auto max-[640px]:mr-auto">
           <img
-            className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 lg:md-auto md:m-auto rounded-2xl max-w-md dark:border-[#AEBCCF]  lg:m-auto"
+            className="border-[#D2492E] border-opacity-10 shadow-2xl mt-4 mb-4 lg:md-auto md:m-auto rounded-2xl dark:border-[#AEBCCF]  lg:m-auto"
             src={bilge}
             alt="kız fotosu"
           ></img>

@@ -3,7 +3,7 @@ const Header = (props) => {
   const { toggle, setToggle } = props;
   return (
     <>
-      <div className="flex justify-end py-4 ">
+      <div className="flex justify-end py-4 max-sm:text-sm max-sm:justify-center">
         <button class="font-bold pr-4 dark:text-[#BAB3E7]">DARK MODE</button>
 
         <span>|</span>
@@ -13,7 +13,7 @@ const Header = (props) => {
         <p className=" dark:text-[#FFFFFF] font-bold">'YE GEÇ</p>
       </div>
 
-      <div className="flex justify-between text-center ">
+      <div className="flex justify-between text-center max-sm:flex-col max-sm:items-center">
         <div className=" flex items-center">
           <h2 className="text-[#7B61FF] text-2xl leading-8 font-semibold rounded-full bg-[#EFEBFF] w-16 h-16 text-center rotate-[40deg] flex justify-center items-center dark:bg-[#4731D3] dark:text-[#8F88FF] ">
             B
@@ -26,10 +26,10 @@ const Header = (props) => {
         height="62"
         viewBox="0 0 64 62"
         fill="none"
-      >
+        >
         <ellipse cx="31.8378" cy="31" rx="31.8378" ry="31" fill="#EEEBFF" />
         <text>B</text>
-      </svg> */}
+        </svg> */}
 
         <div className=" my-5 ">
           <a
