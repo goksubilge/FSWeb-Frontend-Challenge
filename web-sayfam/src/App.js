@@ -9,17 +9,23 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { useState } from "react";
 import Profile from "./components/Profile";
+import "./dmButton.css";
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap%27);
 </style>;
 
 function App() {
-  const [toggle, setToggle] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+
+    document.querySelector("html").classList.toggle("dark", darkMode);
+  };
 
   return (
     <div>
-      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] font-normal text-[#6B7280]">
-        <Header toggle={toggle} setToggle={setToggle} />
+      <div className="flex flex-col justify-center mx-auto my-0 max-w-[1440px] py-[2%] px-[8%] font-normal text-[#6B7280] dark:bg-[#252128] dark:text-white">
+        <Header toggle={!darkMode} setToggle={toggleDarkMode} />
         <Hero />
         <Skills />
         <hr />

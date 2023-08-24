@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div id="project" className="mt-4 mb-4">
       <div>
-        <h4 className="text-[#1F2937] text-5xl leading-none font-semibold mb-4 ">
+        <h4 className="text-[#1F2937] text-5xl leading-none font-semibold mb-4 dark:text-[#AEBCCF]">
           Projects
         </h4>
       </div>
@@ -13,7 +13,7 @@ const Projects = () => {
         {DataProjects().map((item, index) => (
           <div key={index} className="max-w-[300px]">
             <img src={item.picture} alt="projects"></img>
-            <h2 className="text-[#7B61FF] text-3xl font-medium self-stretch mt-2 mb-2">
+            <h2 className="text-[#7B61FF] text-3xl font-medium self-stretch mt-2 mb-2 dark:text-[#CFCBFF]">
               {item.title}
             </h2>
             <h3 className="text-sm pb-4">{item.descr}</h3>
@@ -21,17 +21,23 @@ const Projects = () => {
               {item.emptyInfo.map((item, index) => (
                 <span
                   key={index}
-                  className="flex-row justify-between border-2 rounded-md px-4 py-1 gap-2 border-[#7B61FF] text-[#7B61FF] "
+                  className="flex-row justify-between border-2 rounded-md px-4 py-1 gap-2 border-[#7B61FF] text-[#8F88FF] dark:text-[#CFCBFF] dark:border-[#CFCBFF] dark:bg-[#383838]"
                 >
                   {item}
                 </span>
               ))}
             </article>
             <div className="flex justify-between">
-              <a href={item.link1} className="text-[#7B61FF] underline">
+              <a
+                href={item.link1}
+                className="text-[#7B61FF] underline dark:text-[#8F88FF]"
+              >
                 Github
               </a>
-              <a href={item.link2} className="text-[#7B61FF] underline">
+              <a
+                href={item.link2}
+                className="text-[#7B61FF] underline dark:text-[#8F88FF]"
+              >
                 View Site
               </a>
             </div>

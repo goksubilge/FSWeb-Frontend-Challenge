@@ -6,8 +6,8 @@ const Hero = () => {
     <div>
       <p
         className="flex 
-      items-center justify-center text-xl font-medium text-[#7B61FF] leading-7
-      before:bg-[#7B61FF] before:flex-1 before:h-[1px] after:h-[1px] after:flex-[6]  "
+      items-center justify-center text-xl font-medium text-[#7B61FF] leading-7 dark:text-[#B7AAFF]
+      before:bg-[#7B61FF] dark:before:bg-[#B7AAFF] before:flex-1 before:h-[1px] after:h-[1px] after:flex-[6]  "
       >
         <span className=" bg-none my-0 mx-4 max-sm:flex max-sm:justify-center">
           Bilge GÖKSU
@@ -15,7 +15,7 @@ const Hero = () => {
       </p>
       <div className=" flex justify-between items-center gap-4 max-[1024px]:flex-col-reverse ">
         <article className="mt-10 my-3">
-          <h1 className="text-[#1F2937] leading-none font-bold text-7xl max-sm:text-5xl py-2">
+          <h1 className="text-[#1F2937] leading-none font-bold text-7xl max-sm:text-5xl py-2 dark:text-[#AEBCCF]">
             Creative thinker Minimalism lover
           </h1>
           <p className="max-w-lg py-4 pr-2 ">
@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="flex py-2 max-sm:flex-col max-sm:items-center gap-4">
             <button
               href="https://github.com/goksubilge"
-              className=" duration-500 text-[#FFFFFF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] bg-[#7B61FF] hover:text-[#7B61FF] hover:bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-9"
+              className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-9"
             >
               Hire me
             </button>
