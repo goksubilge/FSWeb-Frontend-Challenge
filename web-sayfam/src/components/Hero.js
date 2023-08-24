@@ -1,7 +1,13 @@
 import React from "react";
 import bilge from "../extras/assets/images/bilge.jpg";
+import { useContext } from "react";
+import { LanguageContext } from "../extras/Context";
+import { GeneralDatas } from "../extras/GeneralDatas";
 
 const Hero = () => {
+  const { languagePreference } = useContext(LanguageContext);
+  const hero = GeneralDatas[languagePreference.toLowerCase()].hero;
+
   return (
     <div>
       <p
@@ -16,19 +22,15 @@ const Hero = () => {
       <div className=" flex justify-between items-center gap-4 max-[1024px]:flex-col-reverse ">
         <article className="mt-10 my-3">
           <h1 className="text-[#1F2937] leading-none font-bold text-7xl max-sm:text-5xl py-2 dark:text-[#AEBCCF]">
-            Creative thinker Minimalism lover
+            {hero.mTitle}
           </h1>
-          <p className="max-w-lg py-4 pr-2 ">
-            Hi, I’m Bilge. I’m a full-stack developer. If you are looking for a
-            Developer who to craft solid and scalable frontend products with
-            great user experiences. Let’s shake hands with me.
-          </p>
+          <p className="max-w-lg py-4 pr-2 ">{hero.info}</p>
           <div className="flex py-2 max-sm:flex-col max-sm:items-center gap-4">
             <button
               href="https://github.com/goksubilge"
               className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] bg-[#FFFFFF] rounded-md dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-9"
             >
-              Hire me
+              {hero.hire}
             </button>
             <button className=" duration-500 text-[#7B61FF] text-lg font-medium w-36 max-sm:w-full h-12 border-2 border-[#7B61FF] hover:bg-[#7B61FF] hover:text-[#FFFFFF] rounded-md flex items-center justify-center dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] dark:hover:bg-[#E1E1FF] dark:hover:text-[#000000] px-8 ">
               <svg
