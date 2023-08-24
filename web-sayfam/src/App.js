@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Profile from "./components/Profile";
 import "./dmButton.css";
 <style>
@@ -21,6 +21,23 @@ function App() {
 
     document.querySelector("html").classList.toggle("dark", darkMode);
   };
+
+  useEffect(() => {
+    const themeHandle = () => {
+      if (
+        localStorage.getItem("theme") === JSON.stringify("dark") ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-sheme:dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+        setDarkMode(!darkMode);
+      } else {
+        document.documentElement.classList.remove("dark");
+        setDarkMode(darkMode);
+      }
+    };
+    themeHandle();
+  }, []);
 
   return (
     <div>

@@ -7,7 +7,13 @@ const Header = (props) => {
       <div className="flex justify-end py-4 max-sm:text-sm max-sm:justify-center">
         <div
           className={toggle ? "radio-btn bg" : "radio-btn"}
-          onClick={() => setToggle(toggle)}
+          onClick={() => {
+            setToggle(toggle);
+            localStorage.setItem(
+              "theme",
+              JSON.stringify(toggle ? "light" : "dark")
+            );
+          }}
         >
           <div className={toggle ? "radio-inner active" : "radio-inner"}></div>
         </div>
