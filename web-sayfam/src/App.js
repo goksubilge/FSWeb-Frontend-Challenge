@@ -37,6 +37,7 @@ function App() {
       }
     };
     themeHandle();
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -102,7 +102,7 @@ export const GeneralDatas = {
     },
     hero: {
       mTitle: "Yaratıcı Düşünce Minimalist Düzen",
-      info: "Merhaba, ben Gökhan. Full-Stack yazılımcı olmak için çalışıyorum. Eğer öğrenmeye hevesli, yeni meydan okumalara açık, yaratıcı birisini arıyorsanız, benimle iletişime geçebilirsiniz!",
+      info: "Merhaba, ben Bilge. Full-Stack yazılımcı olmak için çalışıyorum. Eğer öğrenmeye hevesli, yeni meydan okumalara açık, yaratıcı birisini arıyorsanız, benimle iletişime geçebilirsiniz!",
       hire: "İletişim",
     },
     skills: {
